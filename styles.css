@@ -1,0 +1,93 @@
+/* Master Styles */
+body {
+    margin: 0px;
+    font-family: "Monument Extended", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* NAW Styles */
+.naw-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.naw-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.naw-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.naw-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.naw-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.naw-link-wrapper a:hover {
+    color: black;
+}
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* .logo-wrapper img{ */
+    width: 200%;
+    position: absolute;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: chartreuse;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
