@@ -69,10 +69,13 @@ body {
     text-align: center;
 }
 
-.card p {
+.card a {
     color: #E3CDDD;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #916CB6;
 }
 
 /* ABOUT STYLES */
