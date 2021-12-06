@@ -33,7 +33,7 @@ body {
 }
 
 .naw-link-wrapper a {
-    color: #8a8a8a;
+    color: #E28E4D;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -46,48 +46,50 @@ body {
     color: black;
 }
 
-/* Portfolio Styles */
+/* CASE BILDER */
 
-.portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.portfolio-item-wrapper {
-    position: relative;
-}
-
-.portfolio-img-background {
-    height: 500px;
-    width: 100%;
+.hero-fullscreen-one {
+    /* Bakgrundsbild */
+    background-image: url(Images/BackgroundG.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
+    height: 200vh;
+    /* För att centrera kortet */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* CASE 1-4 */
+.card {
+    background-color: transparent;
+    padding: 0 1.5rem;
+    margin: 2rem 2rem 2rem;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-/* .logo-wrapper img{ */
-    width: 200%;
-    position: absolute;
 }
 
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: chartreuse;
+.card p {
+    color: #E3CDDD;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
 }
 
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+/* ABOUT STYLES */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.profile-images-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: #E28E4D;
+}
+
